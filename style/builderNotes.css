@@ -1,0 +1,97 @@
+body{
+    background: #010622;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+
+    min-height: 100vh;
+    margin: 70px 50px;
+}
+
+.notes-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#010622, #010622), linear-gradient(-45deg,#010622, #29c3c3);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.notes-add img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px; /* Espacio entre el texto y la imagen */
+    position: relative;
+    z-index: 1; /* Asegura que la imagen esté por encima del fondo */
+}
+
+.notes-add::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #010933, #29c3c3);
+    transition: left 0.4s ease;
+    z-index: -1; /* Asegura que el fondo esté detrás del texto y la imagen */
+}
+
+.notes-add:hover::before {
+    left: 0;
+}
+
+.notes-add:hover {
+    color: #ffffff; /* Cambia el color del texto al hacer hover */
+}
+
+.notes-add {
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+
+
+/*CSS NOTAS*/
+.notes-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 335px;
+    min-height: 130px;
+    background: #f1f1f1;
+    color: #010622;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+/*fff87d*/
