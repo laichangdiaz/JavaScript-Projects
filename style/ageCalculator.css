@@ -1,0 +1,110 @@
+/*BCKGROUND*/
+.container{
+    background: linear-gradient(135deg, #0f0021,#020e8a);
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    color: rgb(23, 0, 138);
+    margin: 0 auto;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*CONTAINER*/
+.container-2{
+    width: 100%;
+    max-width: 600px;
+    background: rgb(255,255,255,0.3);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+/*AGE CALCULATOR*/
+.calculator{
+    width: 100%; 
+    background: #fefdff;
+    padding: 20px 25px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.16);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+}
+.calculator input{
+    border-radius: 4px;
+    border: none;
+    background: rgba(192, 192, 192, 0.192);
+    padding: 15px;
+    cursor: pointer;
+
+}
+.calculator button{
+    border-radius: 4px;
+    padding: 15px;
+    border: 3px solid  rgba(192, 192, 192, 0.404);
+    background: transparent;
+    color: #11965c;
+    font-weight: 550;
+    cursor: pointer;
+}
+.calculator button:hover{
+    background: #11965c;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+/*DIV QUE CONTIENE RESULTADO DE LA CALCULADORA*/
+.result{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.result div{
+    width: 140px;
+    height: 100px;
+    background: linear-gradient(135deg, #11965c,#020e8a);
+    color: #e1e0e0;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    padding: 1.25em 0;
+    box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.16);
+ 
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.result div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(120deg, transparent, #11965c, transparent);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+
+.result div:hover::before {
+    left: 100%;
+}
+
+
+span{
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 600;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
