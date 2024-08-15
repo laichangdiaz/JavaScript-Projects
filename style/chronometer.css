@@ -1,0 +1,76 @@
+body{
+    background-image: url('background-renacimiento.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    align-items: center; /* Centra el contenedor verticalmente */
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0;
+}
+
+/*BASICOS*/
+.container-time{
+    width: 100%;
+    max-width: 500px;
+    background: #2d19006f;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+.time{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.bts{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bts button{
+    border:  2px solid #fff;
+}
+
+
+/*cronometro*/
+.stop-btn, .restart-btn{
+    width: 45px;
+    height: 45px;   
+    padding: 5px;
+    background: transparent;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+.stop-btn img, .restart-btn img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.7s ease-in-out;
+}
+.stop-btn:hover img , .restart-btn:hover img{
+    transform: rotate(-360deg);
+}
+
+.start-btn{
+    background: #f1ebff;
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.start-btn img {
+    width: 50px;
+    height: 40px;
+}
